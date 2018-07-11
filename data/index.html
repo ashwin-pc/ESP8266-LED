@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+    <title>Home Light</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <!-- Page Title -->
+        <h1>Home Light</h1>
+        
+        <!-- Sleep timer section -->
+        <div class="form">
+            <input type='number' name='min' id='timeVal' value="0">
+            <button class='formBtn addTime'>+5</button>
+            <button class='formBtn addTime'>+15</button>
+            <button class='formBtn addTime'>+30</button>
+            <button class='formBtn addTime'>+60</button>
+            <button class='formBtn blue set'>Set in Min</button>
+        </div>
+    </nav>
+    <div class="container">
+
+        <!-- Slider -->
+        <div class="slidecontainer">
+            <input type="range" min="0" max="1023" value="0" class="slider" id="myRange">
+        </div>
+
+        <!-- Keep these buttons togeter to prevent div rollover -->
+        <button class="btn b-2" id="dimDown">-</button><button class="btn b-2" id="dimUp">+</button>
+
+        <!-- On/Off -->
+        <button class="btn" id="onOff">ON/OFF</button>
+    </div>
+
+    <div id="msg" style="display:none">Test</div>
+
+    <script src="jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
